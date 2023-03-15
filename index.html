@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leo's Restaurant</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+    <form  method="post" action="#">
+        <div class="row">
+            <div class="col-12 mt-4 mb-4">
+                <h1>Leo's Burger Restaurant and Pizzeria</h1>
+            </div>
+            <div class="col-6">
+                <h2>Hamburger</h2>
+                <p>Quantity:
+                    <select id="quantity1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </p>
+                <p>Pick-up or Delivery:
+                    <input type="radio" name="Pick-up or Delivery" value="p">Pick-up
+                    <input type="radio" name="Pick-up or Delivery" value="d">Delivery
+                </p>
+                <p>Toppings:
+                <div class ="form-check">
+                    <input type="checkbox" name="toppings" value="cheese" class="form-check-input" id="cheese">
+                    <label class="form-check-label" for="cheese">Cheese</label>
+                </div>
+                <div class ="form-check">
+                    <input type="checkbox" name="toppings" value="bacon" class="form-check-input" id="bacon">
+                    <label class="form-check-label" for="bacon">Bacon</label>
+                </div>
+                <div class ="form-check">
+                    <input type="checkbox" name="toppings" value="pickles" class="form-check-input" id="pickles">
+                    <label class="form-check-label" for="pickles">Pickles</label>
+                </div>
+            </div>
+            <div class="col-6">
+                <h2>Pizza</h2>
+                <p>Quantity:
+                    <select id="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </p>
+                <p>Pick-up or Delivery:
+                    <input type="radio" name="Pick-up or Delivery" value="p">Pick-up
+                    <input type="radio" name="Pick-up or Delivery" value="d">Delivery
+                </p>
+                <p>Toppings:
+                <div class ="form-check">
+                    <input type="checkbox" name="toppings" value="pepperoni" class="form-check-input" id="pepperoni">
+                    <label class="form-check-label" for="pepperoni">Pepperoni</label>
+                </div>
+                <div class ="form-check">
+                    <input type="checkbox" name="toppings" value="anchovies" class="form-check-input" id="anchovies">
+                    <label class="form-check-label" for="anchovies">Anchovies</label>
+                </div>
+                <div class ="form-check">
+                    <input type="checkbox" name="toppings" value="pineapple" class="form-check-input" id="pineapple">
+                    <label class="form-check-label" for="Pineapple">Pineapple</label>
+                </div>
+            </div>
+            <div class="col-8">
+                <h2> Customer Information</h2>
+                <p>Name:
+                    <input type="text" name="name" id="name" placeholder="Enter Name">
+                </p>
+                <p>Email:
+                    <input type="email" id="email" placeholder="name@example.com">
+                </p>
+                <p>Password:
+                    <input type="password" id="password1">
+                </p>
+                <p>Comments:
+                    <br>
+                    <textarea id="comments" cols="24" rows="5" placeholder="Add a comment..."></textarea>
+                </p>
+                <input type="submit" value="Submit Information">
+            </div>
+
+        </div>
+    </form>
+</div>
+</body>
+</html>
